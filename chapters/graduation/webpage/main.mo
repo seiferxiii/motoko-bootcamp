@@ -13,15 +13,16 @@ actor Webpage {
     // The webpage displays the manifesto
     public query func http_request(request : HttpRequest) : async HttpResponse {
         return ({
-            status_code = 404;
-            headers = [];
-            body = Text.encodeUtf8("Hello world!");
+            status_code = 200;
+            headers = [("Content-Type", "text/html; charset=UTF-8")];
+            body = Text.encodeUtf8(manifesto);
             streaming_strategy = null;
         });
     };
 
     // This function should only be callable by the DAO canister (no one else should be able to change the manifesto)
     public shared ({ caller }) func setManifesto(newManifesto : Text) : async Result<(), Text> {
-        return #err("Not implemented");
+        manifesto := newManifesto;
+        return #ok();
     };
 };

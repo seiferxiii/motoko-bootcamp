@@ -4,7 +4,7 @@
       "main": "chapters/qualification/demo/main.mo",
       "type": "motoko"
     },
-    "motivation_letter" : {
+    "motivation_letter": {
       "main": "chapters/qualification/challenge/main.mo",
       "type": "motoko"
     },
@@ -28,7 +28,7 @@
       "main": "chapters/chapter_5/challenge/main.mo",
       "type": "motoko"
     },
-    "graduation_dao" : {
+    "graduation_dao": {
       "main": "chapters/graduation/dao/main.mo",
       "type": "motoko"
     },
@@ -38,6 +38,10 @@
     },
     "graduation_webpage": {
       "main": "chapters/graduation/webpage/main.mo",
+      "type": "motoko"
+    },
+    "qualification": {
+      "main": "chapters/qualification/challenge/main.mo",
       "type": "motoko"
     }
   },
